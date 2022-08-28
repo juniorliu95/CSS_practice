@@ -1,0 +1,65 @@
+/* reset whole */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* page setting */
+html, body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+a{
+    color:#333; /* avoid blue links on the page*/
+    text-decoration: none; /* avoid underline */
+}
+h1, h2, h3{
+    padding-bottom: 20px;
+}
+p{
+    margin: 10px 0; /* margin vertical, margin horizontal */
+}
+
+/* specific settings */
+.container{
+    margin: 0%, auto; /* center horizontally */
+    /* max-width: fit-content; */
+    /* max-width: 1100px; */
+    overflow: hidden;
+    padding: 0%, 20px;
+}
+#nav-bar{
+    background-color: #333;
+    color: #fff; /* covered by a{} */
+    overflow: auto;
+}
+#nav-bar a{
+    color: #fff;
+}
+#nav-bar h1{
+    float: left;
+    padding: 0%;
+}
+#nav-bar h1 a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#nav-bar ul{
+    float: right;
+    list-style: none; /* delete the dot before item */
+}
+#nav-bar li{
+    float: left;
+}
+#nav-bar li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#nav-bar a:hover, #nav-bar a.current {
+    background-color: #444;
+    color: #f7c08a;
+}
